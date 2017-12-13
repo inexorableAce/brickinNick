@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>start Soon</title>
+		<style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 1090px;
+  width: 1920px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap-reverse;
+  flex-direction: column-reverse;
+}
+
+canvas {
+  position: absolute;
+  width: 1920px;
+  height: 1090px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.brickCont {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1920px;
+  height: 900px;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.textCont {
+  position: absolute;
+  font-family: 'Montserrat Alternates';
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+}
+
+.tTwo {
+  z-index: 1;
+}
+
+.logo {
+  animation: pulse 2s ease-in-out infinite alternate;
+}
+
+.tOne {
+  z-index: 9;
+  animation: move 40s ease-in infinite forwards;
+}
+
+.textCont > span {
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -10px;
+}
+
+.small {
+  font-size: 40px;
+  letter-spacing: -1px;
+}
+
+.brick {
+  background: #92CA45;
+  width: 147.69px;
+  height: 70px;
+  position: relative;
+  border-radius: 1px 1px 0 0;
+  bottom: 1090px;
+}
+
+.half {
+  width: 73.84px;
+}
+
+.brick:nth-child(1) {
+  animation: fall 40s ease-in 0.09s infinite forwards;
+}
+
+.brick:nth-child(2) {
+  animation: fall 40s ease-in 0.18s infinite forwards;
+}
+
+.brick:nth-child(3) {
+  animation: fall 40s ease-in 0.27s infinite forwards;
+}
+
+.brick:nth-child(4) {
+  animation: fall 40s ease-in 0.36s infinite forwards;
+}
+
+.brick:nth-child(5) {
+  animation: fall 40s ease-in 0.45s infinite forwards;
+}
+
+.brick:nth-child(6) {
+  animation: fall 40s ease-in 0.54s infinite forwards;
+}
+
+.brick:nth-child(7) {
+  animation: fall 40s ease-in 0.63s infinite forwards;
+}
+
+.brick:nth-child(8) {
+  animation: fall 40s ease-in 0.72s infinite forwards;
+}
+
+.brick:nth-child(9) {
+  animation: fall 40s ease-in 0.81s infinite forwards;
+}
+
+.brick:nth-child(10) {
+  animation: fall 40s ease-in 0.9s infinite forwards;
+}
+
+.brick:nth-child(11) {
+  animation: fall 40s ease-in 0.99s infinite forwards;
+}
+
+.brick:nth-child(12) {
+  animation: fall 40s ease-in 1.08s infinite forwards;
+}
+
+.brick:nth-child(13) {
+  animation: fall 40s ease-in 1.17s infinite forwards;
+}
+
+.brick:nth-child(14) {
+  animation: fall 40s ease-in 1.26s infinite forwards;
+}
+
+.brick:nth-child(15) {
+  animation: fall 40s ease-in 1.35s infinite forwards;
+}
+
+.brick:nth-child(16) {
+  animation: fall 40s ease-in 1.44s infinite forwards;
+}
+
+.brick:nth-child(17) {
+  animation: fall 40s ease-in 1.53s infinite forwards;
+}
+
+.brick:nth-child(18) {
+  animation: fall 40s ease-in 1.62s infinite forwards;
+}
+
+.brick:nth-child(19) {
+  animation: fall 40s ease-in 1.71s infinite forwards;
+}
+
+.brick:nth-child(20) {
+  animation: fall 40s ease-in 1.8s infinite forwards;
+}
+
+.brick:nth-child(21) {
+  animation: fall 40s ease-in 1.89s infinite forwards;
+}
+
+.brick:nth-child(22) {
+  animation: fall 40s ease-in 1.98s infinite forwards;
+}
+
+.brick:nth-child(23) {
+  animation: fall 40s ease-in 2.07s infinite forwards;
+}
+
+.brick:nth-child(24) {
+  animation: fall 40s ease-in 2.16s infinite forwards;
+}
+
+.brick:nth-child(25) {
+  animation: fall 40s ease-in 2.25s infinite forwards;
+}
+
+.brick:nth-child(26) {
+  animation: fall 40s ease-in 2.34s infinite forwards;
+}
+
+.brick:nth-child(27) {
+  animation: fall 40s ease-in 2.43s infinite forwards;
+}
+
+.brick:nth-child(28) {
+  animation: fall 40s ease-in 2.52s infinite forwards;
+}
+
+.brick:nth-child(29) {
+  animation: fall 40s ease-in 2.61s infinite forwards;
+}
+
+.brick:nth-child(30) {
+  animation: fall 40s ease-in 2.7s infinite forwards;
+}
+
+.brick:nth-child(31) {
+  animation: fall 40s ease-in 2.79s infinite forwards;
+}
+
+.brick:nth-child(32) {
+  animation: fall 40s ease-in 2.88s infinite forwards;
+}
+
+.brick:nth-child(33) {
+  animation: fall 40s ease-in 2.97s infinite forwards;
+}
+
+.brick:nth-child(34) {
+  animation: fall 40s ease-in 3.06s infinite forwards;
+}
+
+.brick:nth-child(35) {
+  animation: fall 40s ease-in 3.15s infinite forwards;
+}
+
+.brick:nth-child(36) {
+  animation: fall 40s ease-in 3.24s infinite forwards;
+}
+
+.brick:nth-child(37) {
+  animation: fall 40s ease-in 3.33s infinite forwards;
+}
+
+.brick:nth-child(38) {
+  animation: fall 40s ease-in 3.42s infinite forwards;
+}
+
+.brick:nth-child(39) {
+  animation: fall 40s ease-in 3.51s infinite forwards;
+}
+
+.brick:nth-child(40) {
+  animation: fall 40s ease-in 3.6s infinite forwards;
+}
+
+.brick:nth-child(41) {
+  animation: fall 40s ease-in 3.69s infinite forwards;
+}
+
+.brick:nth-child(42) {
+  animation: fall 40s ease-in 3.78s infinite forwards;
+}
+
+.brick:nth-child(43) {
+  animation: fall 40s ease-in 3.87s infinite forwards;
+}
+
+.brick:nth-child(44) {
+  animation: fall 40s ease-in 3.96s infinite forwards;
+}
+
+.brick:nth-child(45) {
+  animation: fall 40s ease-in 4.05s infinite forwards;
+}
+
+.brick:nth-child(46) {
+  animation: fall 40s ease-in 4.14s infinite forwards;
+}
+
+.brick:nth-child(47) {
+  animation: fall 40s ease-in 4.23s infinite forwards;
+}
+
+.brick:nth-child(48) {
+  animation: fall 40s ease-in 4.32s infinite forwards;
+}
+
+.brick:nth-child(49) {
+  animation: fall 40s ease-in 4.41s infinite forwards;
+}
+
+.brick:nth-child(50) {
+  animation: fall 40s ease-in 4.5s infinite forwards;
+}
+
+.brick:nth-child(51) {
+  animation: fall 40s ease-in 4.59s infinite forwards;
+}
+
+.brick:nth-child(52) {
+  animation: fall 40s ease-in 4.68s infinite forwards;
+}
+
+.brick:nth-child(53) {
+  animation: fall 40s ease-in 4.77s infinite forwards;
+}
+
+.brick:nth-child(54) {
+  animation: fall 40s ease-in 4.86s infinite forwards;
+}
+
+.brick:nth-child(55) {
+  animation: fall 40s ease-in 4.95s infinite forwards;
+}
+
+.brick:nth-child(56) {
+  animation: fall 40s ease-in 5.04s infinite forwards;
+}
+
+.brick:nth-child(57) {
+  animation: fall 40s ease-in 5.13s infinite forwards;
+}
+
+.brick:nth-child(58) {
+  animation: fall 40s ease-in 5.22s infinite forwards;
+}
+
+.brick:nth-child(59) {
+  animation: fall 40s ease-in 5.31s infinite forwards;
+}
+
+.brick:nth-child(60) {
+  animation: fall 40s ease-in 5.4s infinite forwards;
+}
+
+.brick:nth-child(61) {
+  animation: fall 40s ease-in 5.49s infinite forwards;
+}
+
+.brick:nth-child(62) {
+  animation: fall 40s ease-in 5.58s infinite forwards;
+}
+
+.brick:nth-child(63) {
+  animation: fall 40s ease-in 5.67s infinite forwards;
+}
+
+.brick:nth-child(64) {
+  animation: fall 40s ease-in 5.76s infinite forwards;
+}
+
+.brick:nth-child(65) {
+  animation: fall 40s ease-in 5.85s infinite forwards;
+}
+
+.brick:nth-child(66) {
+  animation: fall 40s ease-in 5.94s infinite forwards;
+}
+
+.brick:nth-child(67) {
+  animation: fall 40s ease-in 6.03s infinite forwards;
+}
+
+.brick:nth-child(68) {
+  animation: fall 40s ease-in 6.12s infinite forwards;
+}
+
+.brick:nth-child(69) {
+  animation: fall 40s ease-in 6.21s infinite forwards;
+}
+
+.brick:nth-child(70) {
+  animation: fall 40s ease-in 6.3s infinite forwards;
+}
+
+.brick:nth-child(71) {
+  animation: fall 40s ease-in 6.39s infinite forwards;
+}
+
+.brick:nth-child(72) {
+  animation: fall 40s ease-in 6.48s infinite forwards;
+}
+
+.brick:nth-child(73) {
+  animation: fall 40s ease-in 6.57s infinite forwards;
+}
+
+.brick:nth-child(74) {
+  animation: fall 40s ease-in 6.66s infinite forwards;
+}
+
+.brick:nth-child(75) {
+  animation: fall 40s ease-in 6.75s infinite forwards;
+}
+
+.brick:nth-child(76) {
+  animation: fall 40s ease-in 6.84s infinite forwards;
+}
+
+.brick:nth-child(77) {
+  animation: fall 40s ease-in 6.93s infinite forwards;
+}
+
+.brick:nth-child(78) {
+  animation: fall 40s ease-in 7.02s infinite forwards;
+}
+
+.brick:nth-child(79) {
+  animation: fall 40s ease-in 7.11s infinite forwards;
+}
+
+.brick:nth-child(80) {
+  animation: fall 40s ease-in 7.2s infinite forwards;
+}
+
+.brick:nth-child(81) {
+  animation: fall 40s ease-in 7.29s infinite forwards;
+}
+
+.brick:nth-child(82) {
+  animation: fall 40s ease-in 7.38s infinite forwards;
+}
+
+.brick:nth-child(83) {
+  animation: fall 40s ease-in 7.47s infinite forwards;
+}
+
+.brick:nth-child(84) {
+  animation: fall 40s ease-in 7.56s infinite forwards;
+}
+
+.brick:nth-child(85) {
+  animation: fall 40s ease-in 7.65s infinite forwards;
+}
+
+.brick:nth-child(86) {
+  animation: fall 40s ease-in 7.74s infinite forwards;
+}
+
+.brick:nth-child(87) {
+  animation: fall 40s ease-in 7.83s infinite forwards;
+}
+
+.brick:nth-child(88) {
+  animation: fall 40s ease-in 7.92s infinite forwards;
+}
+
+.brick:nth-child(89) {
+  animation: fall 40s ease-in 8.01s infinite forwards;
+}
+
+.brick:nth-child(90) {
+  animation: fall 40s ease-in 8.1s infinite forwards;
+}
+
+.brick:nth-child(91) {
+  animation: fall 40s ease-in 8.19s infinite forwards;
+}
+
+.brick:nth-child(92) {
+  animation: fall 40s ease-in 8.28s infinite forwards;
+}
+
+.brick:nth-child(93) {
+  animation: fall 40s ease-in 8.37s infinite forwards;
+}
+
+.brick:nth-child(94) {
+  animation: fall 40s ease-in 8.46s infinite forwards;
+}
+
+.brick:nth-child(95) {
+  animation: fall 40s ease-in 8.55s infinite forwards;
+}
+
+.brick:nth-child(96) {
+  animation: fall 40s ease-in 8.64s infinite forwards;
+}
+
+.brick:nth-child(97) {
+  animation: fall 40s ease-in 8.73s infinite forwards;
+}
+
+.brick:nth-child(98) {
+  animation: fall 40s ease-in 8.82s infinite forwards;
+}
+
+.brick:nth-child(99) {
+  animation: fall 40s ease-in 8.91s infinite forwards;
+}
+
+.brick:nth-child(100) {
+  animation: fall 40s ease-in 9s infinite forwards;
+}
+
+.brick:nth-child(101) {
+  animation: fall 40s ease-in 9.09s infinite forwards;
+}
+
+.brick:nth-child(102) {
+  animation: fall 40s ease-in 9.18s infinite forwards;
+}
+
+.brick:nth-child(103) {
+  animation: fall 40s ease-in 9.27s infinite forwards;
+}
+
+.brick:nth-child(104) {
+  animation: fall 40s ease-in 9.36s infinite forwards;
+}
+
+.brick:nth-child(105) {
+  animation: fall 40s ease-in 9.45s infinite forwards;
+}
+
+.brick:nth-child(106) {
+  animation: fall 40s ease-in 9.54s infinite forwards;
+}
+
+.brick:nth-child(107) {
+  animation: fall 40s ease-in 9.63s infinite forwards;
+}
+
+.brick:nth-child(108) {
+  animation: fall 40s ease-in 9.72s infinite forwards;
+}
+
+.brick:nth-child(109) {
+  animation: fall 40s ease-in 9.81s infinite forwards;
+}
+
+.brick:nth-child(110) {
+  animation: fall 40s ease-in 9.9s infinite forwards;
+}
+
+.brick:nth-child(111) {
+  animation: fall 40s ease-in 9.99s infinite forwards;
+}
+
+.brick:nth-child(112) {
+  animation: fall 40s ease-in 10.08s infinite forwards;
+}
+
+.brick:nth-child(113) {
+  animation: fall 40s ease-in 10.17s infinite forwards;
+}
+
+.brick:nth-child(114) {
+  animation: fall 40s ease-in 10.26s infinite forwards;
+}
+
+.brick:nth-child(115) {
+  animation: fall 40s ease-in 10.35s infinite forwards;
+}
+
+.brick:nth-child(116) {
+  animation: fall 40s ease-in 10.44s infinite forwards;
+}
+
+.brick:nth-child(117) {
+  animation: fall 40s ease-in 10.53s infinite forwards;
+}
+
+.brick:nth-child(118) {
+  animation: fall 40s ease-in 10.62s infinite forwards;
+}
+
+.brick:nth-child(119) {
+  animation: fall 40s ease-in 10.71s infinite forwards;
+}
+
+.brick:nth-child(120) {
+  animation: fall 40s ease-in 10.8s infinite forwards;
+}
+
+.brick:nth-child(121) {
+  animation: fall 40s ease-in 10.89s infinite forwards;
+}
+
+.brick:nth-child(122) {
+  animation: fall 40s ease-in 10.98s infinite forwards;
+}
+
+.brick:nth-child(123) {
+  animation: fall 40s ease-in 11.07s infinite forwards;
+}
+
+.brick:nth-child(124) {
+  animation: fall 40s ease-in 11.16s infinite forwards;
+}
+
+.brick:nth-child(125) {
+  animation: fall 40s ease-in 11.25s infinite forwards;
+}
+
+.brick:nth-child(126) {
+  animation: fall 40s ease-in 11.34s infinite forwards;
+}
+
+.brick:nth-child(127) {
+  animation: fall 40s ease-in 11.43s infinite forwards;
+}
+
+.brick:nth-child(128) {
+  animation: fall 40s ease-in 11.52s infinite forwards;
+}
+
+.brick:nth-child(129) {
+  animation: fall 40s ease-in 11.61s infinite forwards;
+}
+
+.brick:nth-child(130) {
+  animation: fall 40s ease-in 11.7s infinite forwards;
+}
+
+.brick:nth-child(131) {
+  animation: fall 40s ease-in 11.79s infinite forwards;
+}
+
+.brick:nth-child(132) {
+  animation: fall 40s ease-in 11.88s infinite forwards;
+}
+
+.brick:nth-child(133) {
+  animation: fall 40s ease-in 11.97s infinite forwards;
+}
+
+.brick:nth-child(134) {
+  animation: fall 40s ease-in 12.06s infinite forwards;
+}
+
+.brick:nth-child(135) {
+  animation: fall 40s ease-in 12.15s infinite forwards;
+}
+
+.brick:nth-child(136) {
+  animation: fall 40s ease-in 12.24s infinite forwards;
+}
+
+.brick:nth-child(137) {
+  animation: fall 40s ease-in 12.33s infinite forwards;
+}
+
+.brick:nth-child(138) {
+  animation: fall 40s ease-in 12.42s infinite forwards;
+}
+
+.brick:nth-child(139) {
+  animation: fall 40s ease-in 12.51s infinite forwards;
+}
+
+.brick:nth-child(140) {
+  animation: fall 40s ease-in 12.6s infinite forwards;
+}
+
+.brick:nth-child(141) {
+  animation: fall 40s ease-in 12.69s infinite forwards;
+}
+
+.brick:nth-child(142) {
+  animation: fall 40s ease-in 12.78s infinite forwards;
+}
+
+.brick:nth-child(143) {
+  animation: fall 40s ease-in 12.87s infinite forwards;
+}
+
+.brick:nth-child(144) {
+  animation: fall 40s ease-in 12.96s infinite forwards;
+}
+
+.brick:nth-child(145) {
+  animation: fall 40s ease-in 13.05s infinite forwards;
+}
+
+.brick:nth-child(146) {
+  animation: fall 40s ease-in 13.14s infinite forwards;
+}
+
+.brick:nth-child(147) {
+  animation: fall 40s ease-in 13.23s infinite forwards;
+}
+
+.brick:nth-child(148) {
+  animation: fall 40s ease-in 13.32s infinite forwards;
+}
+
+.brick:nth-child(149) {
+  animation: fall 40s ease-in 13.41s infinite forwards;
+}
+
+.brick:nth-child(150) {
+  animation: fall 40s ease-in 13.5s infinite forwards;
+}
+
+.brick:nth-child(151) {
+  animation: fall 40s ease-in 13.59s infinite forwards;
+}
+
+.brick:nth-child(152) {
+  animation: fall 40s ease-in 13.68s infinite forwards;
+}
+
+.brick:nth-child(153) {
+  animation: fall 40s ease-in 13.77s infinite forwards;
+}
+
+.brick:nth-child(154) {
+  animation: fall 40s ease-in 13.86s infinite forwards;
+}
+
+.brick:nth-child(155) {
+  animation: fall 40s ease-in 13.95s infinite forwards;
+}
+
+.brick:nth-child(156) {
+  animation: fall 40s ease-in 14.04s infinite forwards;
+}
+
+.brick:nth-child(157) {
+  animation: fall 40s ease-in 14.13s infinite forwards;
+}
+
+.brick:nth-child(158) {
+  animation: fall 40s ease-in 14.22s infinite forwards;
+}
+
+.brick:nth-child(159) {
+  animation: fall 40s ease-in 14.31s infinite forwards;
+}
+
+.brick:nth-child(160) {
+  animation: fall 40s ease-in 14.4s infinite forwards;
+}
+
+.brick:nth-child(161) {
+  animation: fall 40s ease-in 14.49s infinite forwards;
+}
+
+.brick:nth-child(162) {
+  animation: fall 40s ease-in 14.58s infinite forwards;
+}
+
+.brick:nth-child(163) {
+  animation: fall 40s ease-in 14.67s infinite forwards;
+}
+
+.brick:nth-child(164) {
+  animation: fall 40s ease-in 14.76s infinite forwards;
+}
+
+.brick:nth-child(165) {
+  animation: fall 40s ease-in 14.85s infinite forwards;
+}
+
+.brick:nth-child(166) {
+  animation: fall 40s ease-in 14.94s infinite forwards;
+}
+
+.brick:nth-child(167) {
+  animation: fall 40s ease-in 15.03s infinite forwards;
+}
+
+.brick:nth-child(168) {
+  animation: fall 40s ease-in 15.12s infinite forwards;
+}
+
+.brick:nth-child(169) {
+  animation: fall 40s ease-in 15.21s infinite forwards;
+}
+
+.brick:nth-child(170) {
+  animation: fall 40s ease-in 15.3s infinite forwards;
+}
+
+.brick:nth-child(171) {
+  animation: fall 40s ease-in 15.39s infinite forwards;
+}
+
+.brick:nth-child(172) {
+  animation: fall 40s ease-in 15.48s infinite forwards;
+}
+
+.brick:nth-child(173) {
+  animation: fall 40s ease-in 15.57s infinite forwards;
+}
+
+.brick:nth-child(174) {
+  animation: fall 40s ease-in 15.66s infinite forwards;
+}
+
+.brick:nth-child(175) {
+  animation: fall 40s ease-in 15.75s infinite forwards;
+}
+
+.brick:nth-child(176) {
+  animation: fall 40s ease-in 15.84s infinite forwards;
+}
+
+.brick:nth-child(177) {
+  animation: fall 40s ease-in 15.93s infinite forwards;
+}
+
+.brick:nth-child(178) {
+  animation: fall 40s ease-in 16.02s infinite forwards;
+}
+
+.brick:nth-child(179) {
+  animation: fall 40s ease-in 16.11s infinite forwards;
+}
+
+.brick:nth-child(180) {
+  animation: fall 40s ease-in 16.2s infinite forwards;
+}
+
+.brick:nth-child(181) {
+  animation: fall 40s ease-in 16.29s infinite forwards;
+}
+
+.brick:nth-child(182) {
+  animation: fall 40s ease-in 16.38s infinite forwards;
+}
+
+.brick:nth-child(183) {
+  animation: fall 40s ease-in 16.47s infinite forwards;
+}
+
+.brick:nth-child(184) {
+  animation: fall 40s ease-in 16.56s infinite forwards;
+}
+
+.brick:nth-child(185) {
+  animation: fall 40s ease-in 16.65s infinite forwards;
+}
+
+.brick:nth-child(186) {
+  animation: fall 40s ease-in 16.74s infinite forwards;
+}
+
+.brick:nth-child(187) {
+  animation: fall 40s ease-in 16.83s infinite forwards;
+}
+
+.brick:nth-child(188) {
+  animation: fall 40s ease-in 16.92s infinite forwards;
+}
+
+.brick:nth-child(189) {
+  animation: fall 40s ease-in 17.01s infinite forwards;
+}
+
+.brick::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  height: 2px;
+  width: 98%;
+  top: 2px;
+  left: 1%;
+}
+
+.brick::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-bottom: 64px solid #7cae38;
+  border-left: 10px solid transparent;
+  height: 0;
+  width: 50px;
+  top: 6px;
+  right: 1%;
+  opacity: 0.2;
+}
+
+.brick > i {
+  background: #92CA45;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-top: -10px;
+  margin-left: 8.2px;
+  margin-right: 8.2px;
+  border-radius: 2px;
+}
+
+@keyframes fall {
+  0% {
+    bottom: 1090px;
+  }
+  2% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 0px;
+  }
+  51% {
+    bottom: -1090px;
+  }
+  100% {
+    bottom: -1090px;
+  }
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  1% {
+    opacity: 0;
+  }
+  32% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 1;
+  }
+  62% {
+    opacity: 1;
+  }
+  64% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    width: 700px;
+  }
+  100% {
+    width: 750px;
+  }
+}
+
+
+		</style>
+	</head>
+	<body>
+    <div class="textCont tOne"><span>stream starting soon<span><br><span class="small"></span></div>
+  <div class="textCont tTwo"><img class="logo" src="lib/brickinNickLogo.png" /></div>
+
+<div class="brickCont">
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick half"><i></i><i></i></div>
+
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+  <div class="brick"><i></i><i></i><i></i><i></i></div>
+</div>
+  <canvas id="canvas"></canvas>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js"></script>
+  <script>
+  $.ajax({
+    type: "GET",
+    url: "https://api.twitch.tv/kraken/channels/brickinnick/",
+    headers:{
+      'Client-ID': 'lpcfra5atdz9k7jtdldz5729cfh4zua'
+    },
+    success: function(data){
+      $('.small').append(data.status)
+    }
+}   );
+
+/*
+    *** TRAVELING THROUGH SPACE ***
+
+    An attempt of writing a space travel animation
+
+*/
+
+var canvas = document.getElementById('canvas');
+var flr = Math.floor;
+
+canvas.width = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
+
+var halfw = canvas.width / 2,
+    halfh = canvas.height / 2,
+    step = 2,
+    warpZ = 12,
+    speed = 0.075;
+var stampedDate = new Date();
+
+var ctx = canvas.getContext('2d');
+
+ctx.fillStyle = 'black';
+ctx.fillRect(0,0, canvas.width, canvas.height);
+
+function rnd(num1, num2) {
+    return flr(Math.random() * num2 * 2) + num1;
+}
+
+function getColor() {
+    return 'hsla(200,100%, ' + rnd(50,100) + '%, 1)';
+}
+
+var star = function() {
+    var v = vec3.fromValues(rnd(0 - halfw,halfw),rnd(0 - halfh,halfh), rnd(1, warpZ));
+
+
+    this.x = v[0];
+    this.y = v[1];
+    this.z = v[2];
+    this.color = getColor();
+
+
+    this.reset = function() {
+        v = vec3.fromValues(rnd(0 - halfw,halfw),rnd(0 - halfh,halfh), rnd(1, warpZ));
+
+        this.x = v[0];
+        this.y = v[1];
+        this.color = getColor();
+        vel = this.calcVel();
+    }
+
+    this.calcVel = function() {
+
+        return vec3.fromValues(0, 0, 0 - speed);
+    };
+
+    var vel = this.calcVel();
+
+    this.draw = function() {
+        vel = this.calcVel();
+        v = vec3.add(vec3.create(), v, vel);
+        var x = v[0] / v[2];
+        var y = v[1] / v[2];
+        var x2 = v[0] / (v[2] + speed * 0.50);
+        var y2 = v[1] / (v[2] + speed * 0.50);
+
+        ctx.strokeStyle = this.color;
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+
+        if (x < 0 - halfw || x > halfw || y < 0 - halfh || y > halfh) {
+            this.reset();
+        }
+    };
+
+}
+
+var starfield = function() {
+    var numOfStars = 250;
+
+    var stars = [];
+
+    function _init() {
+        for(var i = 0, len = numOfStars; i < len; i++) {
+            stars.push(new star());
+        }
+    }
+
+    _init();
+
+    this.draw = function() {
+        ctx.translate(halfw, halfh);
+
+        for(var i = 0, len = stars.length; i < len; i++) {
+            var currentStar = stars[i];
+
+            currentStar.draw();
+        }
+    };
+
+}
+
+var mStarField = new starfield();
+
+function draw() {
+
+    // make 5 seconds
+    var millSeconds = 1000 * 10;
+
+    var currentTime = new Date();
+
+    speed = 0.025;
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.fillStyle = '#03122b';
+    ctx.fillRect(0,0, canvas.width, canvas.height);
+
+    mStarField.draw();
+
+    window.requestAnimationFrame(draw);
+}
+
+draw();
+
+window.onresize = function() {
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    halfw = canvas.width / 2;
+    halfh = canvas.height / 2;
+};
+</script>
+</body>
+</html>
